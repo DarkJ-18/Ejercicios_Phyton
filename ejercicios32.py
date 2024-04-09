@@ -154,4 +154,84 @@ edad_hermano2 = int(input("Ingrese la edad del Segundo Hermano: "))
 diferencia_edades(edad_hermano1, edad_hermano2)
 
 
+#11.	Se tiene registrado la producción (unidades) #logradas por un operario a lo largo de la semana #(lunes a sábado). Elabore un algoritmo que nos #muestre o nos diga si el operario recibirá #incentivos sabiendo que el promedio de producción #mínima es de 100 unidades.
+
+
+def verificar_incentivos(produccion_semanal):
+    promedio_produccion = sum(produccion_semanal) / len(produccion_semanal)
+    if promedio_produccion >= 100:
+        return "El operario recibirá incentivos."
+    else:
+        return "El operario no recibirá incentivos."
+
+produccion_semanal = []
+
+print("Ingrese la producción diaria del operario de lunes a sábado:")
+for i in range(6):
+    produccion_diaria = int(input("Ingrese la producción del día {}: ".format(i+1)))
+    produccion_semanal.append(produccion_diaria)
+
+resultado = verificar_incentivos(produccion_semanal)
+print(resultado)
+
+#----- otra forma -------
+
+def calcular_incentivos(produccion_semana):
+    produccion_total = sum(produccion_semana)
+    produccion_promedio = produccion_total / len(produccion_semana)
+    if produccion_promedio >= 100:
+        return "Recibirá Incentivos"
+    else:
+        return "No Recibirá Incentivos"
+
+produccion_lunes = int(input("Producción del día Lunes: "))
+produccion_martes = int(input("Producción del día Martes: "))
+produccion_miercoles = int(input("Producción del día Miércoles: "))
+produccion_jueves = int(input("Producción del día Jueves: "))
+produccion_viernes = int(input("Producción del día Viernes: "))
+produccion_sabado = int(input("Producción del día Sábado: "))
+
+produccion_semana = [produccion_lunes, produccion_martes, produccion_miercoles, produccion_jueves, produccion_viernes, produccion_sabado]
+
+mensaje_incentivos = calcular_incentivos(produccion_semana)
+print(mensaje_incentivos)
+
+
+#12.	Elabora un algoritmo para leer 3 números #enteros diferentes entre sí, y determinar el #número mayor de los tres.
+
+
+
+def encontrar_mayor(n1, n2, n3):
+    if n1 > n2 and n1 > n3:
+        return n1
+    elif n2 > n3:
+        return n2
+    else:
+        return n3
+
+n1 = int(input("Ingrese el primer número entero: "))
+n2 = int(input("Ingrese el segundo número entero: "))
+n3 = int(input("Ingrese el tercer número entero: "))
+
+numero_mayor = encontrar_mayor(n1, n2, n3)
+print("El número mayor es:", numero_mayor)
+
+
+#13.	Elabora un algoritmo que sirva para #identificar el tipo de triangulo conociendo sus #tres lados.
+
+def tipo_triangulo(lado1, lado2, lado3):
+    if lado1 == lado2 == lado3:
+        return "Equilátero"
+    elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
+        return "Isósceles"
+    else:
+        return "Escaleno"
+
+lado1 = float(input("Ingrese la longitud del primer lado del triángulo: "))
+lado2 = float(input("Ingrese la longitud del segundo lado del triángulo: "))
+lado3 = float(input("Ingrese la longitud del tercer lado del triángulo: "))
+
+tipo = tipo_triangulo(lado1, lado2, lado3)
+print("El triángulo es de tipo:", tipo)
+
 
