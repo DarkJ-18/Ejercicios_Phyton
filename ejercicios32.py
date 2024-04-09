@@ -275,3 +275,59 @@ monto_venta = float(input("Ingrese el monto de venta alcanzado por el vendedor d
 
 bonificacion = calcular_bonificacion(monto_venta)
 print("La bonificación correspondiente es:", bonificacion)
+
+
+------ otra forma con diccionario-------
+
+def calcular_bonificacion(monto_venta):
+    bonificaciones = {
+        range(0, 1000): 0,
+        range(1000, 5000): 3,
+        range(5000, 20000): 5,
+        range(20000, float('inf')): 8
+    }
+    for rango, bonificacion in bonificaciones.items():
+        if monto_venta in rango:
+            return (bonificacion * monto_venta) / 100
+
+monto_venta = float(input("Ingrese el monto de venta alcanzado por el vendedor durante el mes: "))
+
+total_bonificacion = calcular_bonificacion(monto_venta)
+print("La bonificación correspondiente es:", total_bonificacion)
+
+
+#16.	Elabore un algoritmo que solicite un número #entero y muestre un mensaje indicando la vocal #correspondiente, considerando que la vocal A = 1.
+
+def obtener_vocal(numero):
+    switch = {
+        1: "A",
+        2: "E",
+        3: "I",
+        4: "O",
+        5: "U"
+    }
+    return switch.get(numero, "Valor Incorrecto")
+
+numero_entero = int(input("Ingrese un número entero del 1 al 5: "))
+
+vocal_correspondiente = obtener_vocal(numero_entero)
+print("La vocal correspondiente es:", vocal_correspondiente)
+
+#---otra vez con diccionario------
+
+
+def obtener_vocal(numero):
+    vocales = {
+        1: "A",
+        2: "E",
+        3: "I",
+        4: "O",
+        5: "U"
+    }
+    return vocales.get(numero, "Número fuera de rango")
+
+numero_entero = int(input("Ingrese un número entero del 1 al 5: "))
+
+vocal_correspondiente = obtener_vocal(numero_entero)
+print("La vocal correspondiente es:", vocal_correspondiente)
+
