@@ -331,3 +331,20 @@ numero_entero = int(input("Ingrese un número entero del 1 al 5: "))
 vocal_correspondiente = obtener_vocal(numero_entero)
 print("La vocal correspondiente es:", vocal_correspondiente)
 
+
+#17.	Se desea leer un número entero de 2 cifras y #que se muestre el número de unidades, decenas que #lo componen.
+
+
+def obtener_unidades_y_decenas(numero):
+    unidades = numero % 10
+    decenas = numero // 10
+    return unidades, decenas
+
+numero_entero = int(input("Ingrese un número entero de dos cifras: "))
+
+if numero_entero >= 10 and numero_entero <= 99:
+    unidades, decenas = obtener_unidades_y_decenas(numero_entero)
+    print("El número", numero_entero, "tiene", decenas, "decenas y", unidades, "unidades.")
+else:
+    print("El número ingresado no es de dos cifras.")
+
