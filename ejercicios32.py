@@ -385,3 +385,31 @@ for k in range(1, numero_empleados + 1):
 sueldo_promedio = suma_sueldos / numero_empleados
 print("El sueldo promedio del grupo de empleados es:", sueldo_promedio)
 
+#21.	Elaborar un algoritmo que solicite la edad de #200 personas, y que muestre cuantos son mayores y #menores de edad hay
+
+
+mayores = 0
+menores = 0
+
+for k in range(1, 201):
+    edad_persona = int(input(f"Ingrese la edad de la persona {k}: "))
+    if edad_persona < 18:
+        menores += 1
+    else:
+        mayores += 1
+
+print("Cantidad de personas mayores de edad:", mayores)
+print("Cantidad de personas menores de edad:", menores)
+
+#22.	Elaborar un algoritmo que solicite 2 número #enteros y muestre su producto por el método de #sumas sucesivas.
+
+primer_numero = int(input("Ingrese el primer número entero: "))
+segundo_numero = int(input("Ingrese el segundo número entero: "))
+
+producto = 0
+
+for k in range(1, segundo_numero + 1):
+    producto += primer_numero
+
+print("El producto de", primer_numero, "y", segundo_numero, "es:", producto)
+
