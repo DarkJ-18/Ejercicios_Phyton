@@ -235,3 +235,43 @@ tipo = tipo_triangulo(lado1, lado2, lado3)
 print("El triángulo es de tipo:", tipo)
 
 
+#14.	Elabore un algoritmo que permita ingresar un #número entero (1 a 10), y muestre su equivalente #en romano.
+
+def convertir_a_romano(numero_entero):
+    romanos = {
+        1: "I",
+        2: "II",
+        3: "III",
+        4: "IV",
+        5: "V",
+        6: "VI",
+        7: "VII",
+        8: "VIII",
+        9: "IX",
+        10: "X"
+    }
+    return romanos.get(numero_entero, "Número fuera de rango")
+
+numero_entero = int(input("Ingrese un número entero entre 1 y 10: "))
+
+equivalente_romano = convertir_a_romano(numero_entero)
+print("El equivalente en romano es:", equivalente_romano)
+
+#15.	Elabore un algoritmo que permita ingresar el #monto de venta alcanzado por un vendedor durante #el mes, luego de calcular la bonificación que le #corresponde sabiendo:
+
+
+def calcular_bonificacion(monto_venta):
+    if monto_venta <= 1000:
+        bonificacion = 0
+    elif monto_venta <= 5000:
+        bonificacion = 3
+    elif monto_venta <= 20000:
+        bonificacion = 5
+    else:
+        bonificacion = 8
+    return bonificacion
+
+monto_venta = float(input("Ingrese el monto de venta alcanzado por el vendedor durante el mes: "))
+
+bonificacion = calcular_bonificacion(monto_venta)
+print("La bonificación correspondiente es:", bonificacion)
