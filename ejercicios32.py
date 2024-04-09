@@ -362,3 +362,26 @@ if es_par(numero_entero):
     print("El número", numero_entero, "es par.")
 else:
     print("El número", numero_entero, "no es par o es cero.")
+
+#19.	Elabore un algoritmo que contenga los número #pares del 1 al 10
+
+print("Números pares del 1 al 10:")
+numero = 2
+print(numero)
+
+for k in range(1, 5):
+    numero += 2
+    print(numero)
+
+#20.	Elaborar un algoritmo que permita mostrar el #sueldo promedio de un grupo de empleados.
+
+numero_empleados = int(input("Ingrese el número de empleados: "))
+suma_sueldos = 0
+
+for k in range(1, numero_empleados + 1):
+    sueldo_empleado = float(input(f"Ingrese el sueldo del empleado {k}: "))
+    suma_sueldos += sueldo_empleado
+
+sueldo_promedio = suma_sueldos / numero_empleados
+print("El sueldo promedio del grupo de empleados es:", sueldo_promedio)
+
