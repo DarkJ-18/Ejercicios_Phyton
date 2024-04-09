@@ -348,3 +348,17 @@ if numero_entero >= 10 and numero_entero <= 99:
 else:
     print("El número ingresado no es de dos cifras.")
 
+
+#18.	Elabore un algoritmo que solicite un número #entero y diferente a cero, e indique si es par.
+#def es_par(numero):
+    if numero != 0 and numero % 2 == 0:
+        return True
+    else:
+        return False
+
+numero_entero = int(input("Ingrese un número entero diferente de cero: "))
+
+if es_par(numero_entero):
+    print("El número", numero_entero, "es par.")
+else:
+    print("El número", numero_entero, "no es par o es cero.")
