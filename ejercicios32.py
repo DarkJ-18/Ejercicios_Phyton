@@ -413,3 +413,11 @@ for k in range(1, segundo_numero + 1):
 
 print("El producto de", primer_numero, "y", segundo_numero, "es:", producto)
 
+
+#23.	Elaborar un algoritmo que muestre 10 números #enteros a partir de 1 excepto los pares.
+
+for k in range(1, 11):
+    if k % 2 != 0:
+        print(k)
+
+
