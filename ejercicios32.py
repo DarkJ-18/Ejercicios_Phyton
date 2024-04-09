@@ -421,3 +421,4 @@ for k in range(1, 11):
         print(k)
 
 
+#24.	Elabore un algoritmo que muestre los términos de la serie que sean menores a 1000.
