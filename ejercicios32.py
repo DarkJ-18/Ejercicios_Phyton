@@ -123,3 +123,35 @@ distancia = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 print("La distancia entre A y B es:", distancia)
 
 #https://interactivechaos.com/es/manual/tutorial-de-python/la-libreria-math
+
+#9.	Elabora un algoritmo que permita averiguar si #una persona debe sacar su CUIL, sabiendo su año #de nacimiento. El Código Único de Identificación #Laboral (CUIL) es el número que se otorga a todo #trabajador al inicio de su actividad laboral en #relación de dependencia (mayores de 17 años) que #pertenezca al Sistema Integrado de Jubilaciones y #Pensiones (SIJP), y a toda otra persona que #gestione alguna prestación o servicio de la #Seguridad Social en la República Argentina.
+
+def verificar_cuil(año_nacimiento, año_actual):
+    edad = año_actual - año_nacimiento
+    if edad > 17:
+        return "Debe solicitar su CUIL."
+    else:
+        return "No debe solicitar su CUIL aún."
+
+año_nacimiento = int(input("Ingrese su año de nacimiento: "))
+año_actual = int(input("Ingrese el año actual: "))
+
+resultado = verificar_cuil(año_nacimiento, año_actual)
+print(resultado)
+
+
+#10.	Elabora un algoritmo que solicite la edad de #2 hermanos y muestre un mensaje indicando la edad #del mayor y cuantos años de diferencia tiene con #el menor.
+
+def diferencia_edades(edad_hermano1, edad_hermano2):
+    if edad_hermano1 > edad_hermano2:
+        print("El Primer Hermano es el Mayor por", edad_hermano1 - edad_hermano2, "años.")
+    else:
+        print("El Segundo Hermano es el Mayor por", edad_hermano2 - edad_hermano1, "años.")
+
+edad_hermano1 = int(input("Ingrese la edad del Primer Hermano: "))
+edad_hermano2 = int(input("Ingrese la edad del Segundo Hermano: "))
+
+diferencia_edades(edad_hermano1, edad_hermano2)
+
+
+
