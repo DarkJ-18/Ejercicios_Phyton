@@ -158,7 +158,7 @@ diferencia_edades(edad_hermano1, edad_hermano2)
 
 
 def verificar_incentivos(produccion_semanal):
-    promedio_produccion = sum(produccion_semanal) / len(produccion_semanal)
+    promedio_produccion = sum(produccion_semanal) / len(produccion_semanal) #para obtener la longitud de un objeto, se usa para contar el número de elementos de una lista
     if promedio_produccion >= 100:
         return "El operario recibirá incentivos."
     else:
