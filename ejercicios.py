@@ -1,5 +1,10 @@
 # Elabore un algoritmo que permita ingresar un #número entero (1 a 10), y muestre su equivalente #en romano.
-
+import os 
+if os.name=="nt": #para windows
+  os.system("cls")
+else: #para linux
+    os.system("clear")
+    
 def convertir_a_romano(numero_entero):
     romanos = {
         1: "I",
@@ -125,4 +130,70 @@ else:
 # (menos de 10°C), templado (10-20°C), cálido (21-30°C)
 # o caluroso (más de 30°C).
 
+
+temp = float (input ("Introduce la temperatura en grados Celsius: "))
+if temp < 10:
+    print("Frío")
+elif temp >= 10 and temp <= 20:
+    print("Templado")
+elif temp >= 21 and temp <= 30:
+    print("Cálido")
+elif temp > 30:
+    print("Caluroso")
+    
+    
+#20. Ejercicio 4: Clasificación de IMC.
+
+# Escribe un programa que reciba el Índice de Masa Corporal (IMC) 
+# de una persona y lo clasifique en: bajo peso (menos de 18.5), 
+# normal (18.5-24.9), sobrepeso (25-29.9) u obeso (30 o más).   
+
+imc = float(input("Ingrese su IMC: "))
+if imc < 18.5:
+    print ("Bajo peso")
+elif 18.5 <= imc < 25:
+       print("Normal")
+elif 25 <= imc < 30:
+       print("Sobrepeso")
+elif imc >= 30:
+       print("Obeso")
+       
+#Ejercicio 5: Evaluación del viento.
+
+#Escribe un programa que reciba la velocidad del viento (en km/h) 
+# y la clasifique en: calmado (menos de 5 km/h), ligero (5-19 km/h), 
+# moderado (20-39 km/h) o fuerte (más de 40 km/h).
+
+velocidad = float (input ("Introduce la velocidad del viento en km/h: "))
+if velocidad < 5:
+    print("Viento calmado")
+elif 5 <= velocidad < 20:
+    print("Viento ligero")
+elif 20 <= velocidad < 40:
+    print("Viento moderado")
+elif velocidad >= 40:
+    print("Viento fuerte")
+    
+#Ejercicio 6: Clasificación de automóviles.
+
+#Escribe un programa que reciba la velocidad máxima 
+# de un automóvil (en km/h) y lo clasifique en: económico (menos de 140 km/h),
+# estándar (140-180 km/h), 
+# deportivo (181-220 km/h) o de alto rendimiento (más de 220 km/h).
+
+velocidad = float(input("Introduce la velocidad máxima del automóvil en km/h: "))
+if velocidad < 140:
+    print("Automóvil económico")
+elif 140 <= velocidad <= 180:
+    print("Automóvil estándar")
+elif 181 <= velocidad <= 220:
+    print("Automóvil deportivo")
+elif velocidad > 220:
+    print("Automóvil de alto rendimiento")
+
+# Ejercicio 7: Clasificación de alturas.
+
+#Escribe un programa que reciba la altura de una persona (en centímetros)
+# y la clasifique en: baja (menos de 150 cm), promedio (150-180 cm) 
+# o alta (más de 180 cm).
 

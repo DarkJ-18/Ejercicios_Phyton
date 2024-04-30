@@ -5,6 +5,11 @@ import math
 # por un móvil que tiene velocidad constante 100 (m/s) durante un tiempo T 30 (Sg), 
 # considerar que es un MRU (Movimiento Rectilíneo Uniforme)
 
+import os 
+if os.name=="nt": #para windows
+  os.system("cls")
+else: #para linux
+    os.system("clear")
 
 
 print("Ingrese la velocidad recorrida  ")
