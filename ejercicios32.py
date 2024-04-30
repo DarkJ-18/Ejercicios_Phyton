@@ -1,8 +1,10 @@
 import math
+#https://interactivechaos.com/es/manual/tutorial-de-python/la-libreria-math
 
-#calcular la distancia recorrida (m) 
+#1.calcular la distancia recorrida (m) 
 # por un móvil que tiene velocidad constante 100 (m/s) durante un tiempo T 30 (Sg), 
 # considerar que es un MRU (Movimiento Rectilíneo Uniforme)
+
 
 
 print("Ingrese la velocidad recorrida  ")
@@ -13,8 +15,7 @@ dis = v * s
 print("la distancia:", dis, "m")
 
 
-
-#Se necesita obtener el promedio simple de un 
+#2.Se necesita obtener el promedio simple de un 
 # estudiante a partir de sus tres notas parciales.
 print("Ingrese las tres notas")
 not1 = float(input())
@@ -24,7 +25,7 @@ not3 = float(input())
 total= (not1+not2+not3)/3
 print("El promedio es: ", total)
      
-#Elaborar un algoritmo que solicite el número de respuestas correctas, 
+#3.Elaborar un algoritmo que solicite el número de respuestas correctas, 
 # incorrectas y en blanco, correspondientes a postulantes, y muestre su puntaje      
 #final considerando, que por cada respuesta correcta tendrá 4 puntos, 
 # respuestas incorrectas tendrá -1 y respuestas en blanco tendrá 0.
@@ -41,7 +42,7 @@ puntaje = (correctas * 4) + (incorrectas * -1) + (en_blanco * 0)
 print("El puntaje final es:", puntaje)
 
 
-#Elaborar un algoritmo que permita ingresar el 
+#4.Elaborar un algoritmo que permita ingresar el 
 # número de partidos ganados, perdidos y empatados, 
 # por algún equipo en el torneo apertura, se debe de mostrar su puntaje total, 
 # teniendo en cuenta que por cada partido ganador obtendrá 3 puntos, 
@@ -61,7 +62,7 @@ print("El puntaje total es: ", pt)
 
 
 
-#Se requiere el algoritmo para elaborar la planilla de un empleado. 
+#5.Se requiere el algoritmo para elaborar la planilla de un empleado. 
 # Para ello se disponSe requiere el algoritmo para elaborar la planilla de un empleado. Para ello se dispone de sus horas laboradas en el mes, así como de la tarifa por hora.e de sus horas laboradas en el mes, 
 # así como de la tarifa por hora.
 
@@ -73,7 +74,7 @@ p = hlm * th
 print("el total de la planilla es: ", p)
 
 
-#Elabore un algoritmo que lea los 3 lados de un triángulo cualquiera y 
+#6.Elabore un algoritmo que lea los 3 lados de un triángulo cualquiera y 
 # calcule su área, considerar: Si A, B y C son los lados, y S el semi perímetro.
 
 print("Ingrese el lado A")
@@ -88,7 +89,7 @@ at = (ls * (ls - la) * (ls - lb) * (ls - lc)) ** 0.5
 print("EL area del triangulo es: ", at)
 
 
-#Elaborar un algoritmo que permita calcular el número de CDs necesarios 
+#7.Elaborar un algoritmo que permita calcular el número de CDs necesarios 
 # para hacer una copia de seguridad, de la información almacenada en un disco cuya capacidad se conoce. 
 # Hay que considerar que el disco duro está lleno de información, además expresado en gigabyte. 
 # Un CD virgen tiene 700 Megabytes de capacidad y una Gigabyte es igual a 1,024 megabyte.
@@ -106,7 +107,7 @@ num_cds = capacidad_disco_megabytes // capacidad_cd
 print("El número de CDs necesarios es:", num_cds)
 
 
-#Se tiene los puntos A y B en el cuadrante positivo del plano cartesiano,
+#8.Se tiene los puntos A y B en el cuadrante positivo del plano cartesiano,
 # elabore el algoritmo que permite obtener la distancia entre A y B.
 
 
@@ -122,9 +123,9 @@ distancia = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 
 print("La distancia entre A y B es:", distancia)
 
-#https://interactivechaos.com/es/manual/tutorial-de-python/la-libreria-math
 
-#9.	Elabora un algoritmo que permita averiguar si #una persona debe sacar su CUIL, sabiendo su año #de nacimiento. El Código Único de Identificación #Laboral (CUIL) es el número que se otorga a todo #trabajador al inicio de su actividad laboral en #relación de dependencia (mayores de 17 años) que #pertenezca al Sistema Integrado de Jubilaciones y #Pensiones (SIJP), y a toda otra persona que #gestione alguna prestación o servicio de la #Seguridad Social en la República Argentina.
+
+#9.Elabora un algoritmo que permita averiguar si #una persona debe sacar su CUIL, sabiendo su año #de nacimiento. El Código Único de Identificación #Laboral (CUIL) es el número que se otorga a todo #trabajador al inicio de su actividad laboral en #relación de dependencia (mayores de 17 años) que #pertenezca al Sistema Integrado de Jubilaciones y #Pensiones (SIJP), y a toda otra persona que #gestione alguna prestación o servicio de la #Seguridad Social en la República Argentina.
 
 def verificar_cuil(año_nacimiento, año_actual):
     edad = año_actual - año_nacimiento
@@ -140,7 +141,7 @@ resultado = verificar_cuil(año_nacimiento, año_actual)
 print(resultado)
 
 
-#10.	Elabora un algoritmo que solicite la edad de #2 hermanos y muestre un mensaje indicando la edad #del mayor y cuantos años de diferencia tiene con #el menor.
+#10.Elabora un algoritmo que solicite la edad de #2 hermanos y muestre un mensaje indicando la edad #del mayor y cuantos años de diferencia tiene con #el menor.
 
 def diferencia_edades(edad_hermano1, edad_hermano2):
     if edad_hermano1 > edad_hermano2:
@@ -277,7 +278,7 @@ bonificacion = calcular_bonificacion(monto_venta)
 print("La bonificación correspondiente es:", bonificacion)
 
 
------- otra forma con diccionario-------
+#------ otra forma con diccionario-------
 
 def calcular_bonificacion(monto_venta):
     bonificaciones = {
@@ -340,17 +341,7 @@ def obtener_unidades_y_decenas(numero):
     decenas = numero // 10
     return unidades, decenas
 
-numero_entero = int(input("Ingrese un número entero de dos cifras: "))
-
-if numero_entero >= 10 and numero_entero <= 99:
-    unidades, decenas = obtener_unidades_y_decenas(numero_entero)
-    print("El número", numero_entero, "tiene", decenas, "decenas y", unidades, "unidades.")
-else:
-    print("El número ingresado no es de dos cifras.")
-
-
-#18.	Elabore un algoritmo que solicite un número #entero y diferente a cero, e indique si es par.
-#def es_par(numero):
+def es_par(numero):
     if numero != 0 and numero % 2 == 0:
         return True
     else:
