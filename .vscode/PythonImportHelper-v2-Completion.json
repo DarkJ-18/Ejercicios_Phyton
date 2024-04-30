@@ -112,7 +112,7 @@
         "kind": 5,
         "importPath": "ejercicios",
         "description": "ejercicios",
-        "peekOfCode": "vocal_correspondiente = obtener_vocal(numero_entero)\nprint(\"La vocal correspondiente es:\", vocal_correspondiente)\n#17\n# Ejercicio 1: Clasificación de edades.\n# Escribe un programa que reciba una edad como entrada \n# y clasifique a la persona en las siguientes categorías: \n# niño (menos de 11 años), adolescente (12-17 años), \n# adulto (18-64 años) o mayor (65 años o más).\n#Opcional: preadolescente: 11 a 13 y adolescente de 14 a 17\nedad = int(input(\"Ingrese su edad\"))",
+        "peekOfCode": "vocal_correspondiente = obtener_vocal(numero_entero)\nprint(\"La vocal correspondiente es:\", vocal_correspondiente)\n#17\n# Ejercicio 1: Clasificación de edades.\n# Escribe un programa que reciba una edad como entrada \n# y clasifique a la persona en las siguientes categorías: \n# niño (menos de 11 años), adolescente (12-17 años), \n# adulto (18-64 años) o mayor (65 años o más).\n#Opcional: preadolescente: 11 a 13 y adolescente de 14 a 17\nedad = int(input(\"Ingrese su edad: \"))",
         "detail": "ejercicios",
         "documentation": {}
     },
@@ -121,7 +121,16 @@
         "kind": 5,
         "importPath": "ejercicios",
         "description": "ejercicios",
-        "peekOfCode": "edad = int(input(\"Ingrese su edad\"))",
+        "peekOfCode": "edad = int(input(\"Ingrese su edad: \"))\ntry:\n    if edad <=11:\n        print(\"Niño\")\n    elif 12<= edad <=17:\n        print(\"Adolescente\")\n    elif 18<=edad <=64:\n        print(\"adulto\")\n    elif edad >=65:\n        print(\"Mayor\")",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "nota",
+        "kind": 5,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "nota = int(input(\"Ingrese la nota: \"))\nif nota < 50:\n    print(\"Deficiente \")\nelif 50 <= nota < 65:\n    print(\"Aprobado\")\nelif 65 <= nota < 85:\n    print(\"Notable\")\nelif 85 <= nota <= 100:\n    print(\"Sobresaliente\")\nelse:",
         "detail": "ejercicios",
         "documentation": {}
     },

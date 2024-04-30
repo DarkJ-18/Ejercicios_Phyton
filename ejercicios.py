@@ -88,7 +88,41 @@ print("La vocal correspondiente es:", vocal_correspondiente)
 # adulto (18-64 años) o mayor (65 años o más).
 #Opcional: preadolescente: 11 a 13 y adolescente de 14 a 17
 
-edad = int(input("Ingrese su edad"))
+edad = int(input("Ingrese su edad: "))
+try:
+    if edad <=11:
+        print("Niño")
+    elif 12<= edad <=17:
+        print("Adolescente")
+    elif 18<=edad <=64:
+        print("adulto")
+    elif edad >=65:
+        print("Mayor")
+except:
+    print("Ingrese solo numeros")
+    
+#18   Escribe un programa que reciba una nota (0-100) 
+# y la clasifique en: deficiente (menos de 50), aprobado (50-64), 
+# notable (65-84), sobresaliente (85-100).
 
+nota = int(input("Ingrese la nota: "))
+if nota < 50:
+    print("Deficiente ")
+elif 50 <= nota < 65:
+    print("Aprobado")
+elif 65 <= nota < 85:
+    print("Notable")
+elif 85 <= nota <= 100:
+    print("Sobresaliente")
+else:
+    print ("Nota fuera del rango permitido.")
+
+
+
+#19. Ejercicio 3: Clasificación de temperaturas.
+#Escribe un programa que reciba una temperatura 
+# (en grados Celsius) y la clasifique en: frío 
+# (menos de 10°C), templado (10-20°C), cálido (21-30°C)
+# o caluroso (más de 30°C).
 
 
