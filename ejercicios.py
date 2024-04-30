@@ -158,7 +158,7 @@ elif 25 <= imc < 30:
 elif imc >= 30:
        print("Obeso")
        
-#Ejercicio 5: Evaluación del viento.
+#21. Ejercicio 5: Evaluación del viento.
 
 #Escribe un programa que reciba la velocidad del viento (en km/h) 
 # y la clasifique en: calmado (menos de 5 km/h), ligero (5-19 km/h), 
@@ -174,7 +174,7 @@ elif 20 <= velocidad < 40:
 elif velocidad >= 40:
     print("Viento fuerte")
     
-#Ejercicio 6: Clasificación de automóviles.
+#22. Ejercicio 6: Clasificación de automóviles.
 
 #Escribe un programa que reciba la velocidad máxima 
 # de un automóvil (en km/h) y lo clasifique en: económico (menos de 140 km/h),
@@ -191,9 +191,11 @@ elif 181 <= velocidad <= 220:
 elif velocidad > 220:
     print("Automóvil de alto rendimiento")
 
-# Ejercicio 7: Clasificación de alturas.
+#23. Ejercicio 7: Clasificación de alturas.
 
 #Escribe un programa que reciba la altura de una persona (en centímetros)
 # y la clasifique en: baja (menos de 150 cm), promedio (150-180 cm) 
 # o alta (más de 180 cm).
+
+
 

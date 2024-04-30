@@ -157,7 +157,7 @@
         "kind": 5,
         "importPath": "ejercicios",
         "description": "ejercicios",
-        "peekOfCode": "imc = float(input(\"Ingrese su IMC: \"))\nif imc < 18.5:\n    print (\"Bajo peso\")\nelif 18.5 <= imc < 25:\n       print(\"Normal\")\nelif 25 <= imc < 30:\n       print(\"Sobrepeso\")\nelif imc >= 30:\n       print(\"Obeso\")\n#Ejercicio 5: Evaluación del viento.",
+        "peekOfCode": "imc = float(input(\"Ingrese su IMC: \"))\nif imc < 18.5:\n    print (\"Bajo peso\")\nelif 18.5 <= imc < 25:\n       print(\"Normal\")\nelif 25 <= imc < 30:\n       print(\"Sobrepeso\")\nelif imc >= 30:\n       print(\"Obeso\")\n#21. Ejercicio 5: Evaluación del viento.",
         "detail": "ejercicios",
         "documentation": {}
     },
@@ -166,7 +166,7 @@
         "kind": 5,
         "importPath": "ejercicios",
         "description": "ejercicios",
-        "peekOfCode": "velocidad = float (input (\"Introduce la velocidad del viento en km/h: \"))\nif velocidad < 5:\n    print(\"Viento calmado\")\nelif 5 <= velocidad < 20:\n    print(\"Viento ligero\")\nelif 20 <= velocidad < 40:\n    print(\"Viento moderado\")\nelif velocidad >= 40:\n    print(\"Viento fuerte\")\n#Ejercicio 6: Clasificación de automóviles.",
+        "peekOfCode": "velocidad = float (input (\"Introduce la velocidad del viento en km/h: \"))\nif velocidad < 5:\n    print(\"Viento calmado\")\nelif 5 <= velocidad < 20:\n    print(\"Viento ligero\")\nelif 20 <= velocidad < 40:\n    print(\"Viento moderado\")\nelif velocidad >= 40:\n    print(\"Viento fuerte\")\n#22. Ejercicio 6: Clasificación de automóviles.",
         "detail": "ejercicios",
         "documentation": {}
     },
@@ -175,7 +175,7 @@
         "kind": 5,
         "importPath": "ejercicios",
         "description": "ejercicios",
-        "peekOfCode": "velocidad = float(input(\"Introduce la velocidad máxima del automóvil en km/h: \"))\nif velocidad < 140:\n    print(\"Automóvil económico\")\nelif 140 <= velocidad <= 180:\n    print(\"Automóvil estándar\")\nelif 181 <= velocidad <= 220:\n    print(\"Automóvil deportivo\")\nelif velocidad > 220:\n    print(\"Automóvil de alto rendimiento\")\n# Ejercicio 7: Clasificación de alturas.",
+        "peekOfCode": "velocidad = float(input(\"Introduce la velocidad máxima del automóvil en km/h: \"))\nif velocidad < 140:\n    print(\"Automóvil económico\")\nelif 140 <= velocidad <= 180:\n    print(\"Automóvil estándar\")\nelif 181 <= velocidad <= 220:\n    print(\"Automóvil deportivo\")\nelif velocidad > 220:\n    print(\"Automóvil de alto rendimiento\")\n#23. Ejercicio 7: Clasificación de alturas.",
         "detail": "ejercicios",
         "documentation": {}
     },
