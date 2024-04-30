@@ -333,7 +333,8 @@ vocal_correspondiente = obtener_vocal(numero_entero)
 print("La vocal correspondiente es:", vocal_correspondiente)
 
 
-#17.	Se desea leer un número entero de 2 cifras y #que se muestre el número de unidades, decenas que #lo componen.
+#17.	Se desea leer un número entero de 2 cifras y 
+# #que se muestre el número de unidades, decenas que #lo componen.
 
 
 def obtener_unidades_y_decenas(numero):
@@ -369,6 +370,8 @@ for k in range(1, 5):
 numero_empleados = int(input("Ingrese el número de empleados: "))
 suma_sueldos = 0
 
+if es_par(numero_entero):
+    print("El número", numero_entero, "es par.")
 for k in range(1, numero_empleados + 1):
     sueldo_empleado = float(input(f"Ingrese el sueldo del empleado {k}: "))
     suma_sueldos += sueldo_empleado

@@ -9,6 +9,123 @@
         "documentation": {}
     },
     {
+        "label": "convertir_a_romano",
+        "kind": 2,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "def convertir_a_romano(numero_entero):\n    romanos = {\n        1: \"I\",\n        2: \"II\",\n        3: \"III\",\n        4: \"IV\",\n        5: \"V\",\n        6: \"VI\",\n        7: \"VII\",\n        8: \"VIII\",",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_bonificacion",
+        "kind": 2,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "def calcular_bonificacion(monto_venta):\n    if monto_venta <= 1000:\n        bonificacion = 0\n    elif monto_venta <= 5000:\n        bonificacion = 3\n    elif monto_venta <= 20000:\n        bonificacion = 5\n    else:\n        bonificacion = 8\n    return bonificacion",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_bonificacion",
+        "kind": 2,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "def calcular_bonificacion(monto_venta):\n    bonificaciones = {\n        range(0, 1000): 0,\n        range(1000, 5000): 3,\n        range(5000, 20000): 5,\n        range(20000, float('inf')): 8\n    }\n    for rango, bonificacion in bonificaciones.items():\n        if monto_venta in rango:\n            return (bonificacion * monto_venta) / 100",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "obtener_vocal",
+        "kind": 2,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "def obtener_vocal(numero):\n    switch = {\n        1: \"A\",\n        2: \"E\",\n        3: \"I\",\n        4: \"O\",\n        5: \"U\"\n    }\n    return switch.get(numero, \"Valor Incorrecto\")\nnumero_entero = int(input(\"Ingrese un número entero del 1 al 5: \"))",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "numero_entero",
+        "kind": 5,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "numero_entero = int(input(\"Ingrese un número entero entre 1 y 10: \"))\nequivalente_romano = convertir_a_romano(numero_entero)\nprint(\"El equivalente en romano es:\", equivalente_romano)\n#15.Elabore un algoritmo que permita ingresar el #monto de venta alcanzado por un vendedor durante #el mes, luego de calcular la bonificación que le #corresponde sabiendo:\ndef calcular_bonificacion(monto_venta):\n    if monto_venta <= 1000:\n        bonificacion = 0\n    elif monto_venta <= 5000:\n        bonificacion = 3\n    elif monto_venta <= 20000:",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "equivalente_romano",
+        "kind": 5,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "equivalente_romano = convertir_a_romano(numero_entero)\nprint(\"El equivalente en romano es:\", equivalente_romano)\n#15.Elabore un algoritmo que permita ingresar el #monto de venta alcanzado por un vendedor durante #el mes, luego de calcular la bonificación que le #corresponde sabiendo:\ndef calcular_bonificacion(monto_venta):\n    if monto_venta <= 1000:\n        bonificacion = 0\n    elif monto_venta <= 5000:\n        bonificacion = 3\n    elif monto_venta <= 20000:\n        bonificacion = 5",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "monto_venta",
+        "kind": 5,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "monto_venta = float(input(\"Ingrese el monto de venta alcanzado por el vendedor durante el mes: \"))\nbonificacion = calcular_bonificacion(monto_venta)\nprint(\"La bonificación correspondiente es:\", bonificacion)\n#------ otra forma con diccionario-------\ndef calcular_bonificacion(monto_venta):\n    bonificaciones = {\n        range(0, 1000): 0,\n        range(1000, 5000): 3,\n        range(5000, 20000): 5,\n        range(20000, float('inf')): 8",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "bonificacion",
+        "kind": 5,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "bonificacion = calcular_bonificacion(monto_venta)\nprint(\"La bonificación correspondiente es:\", bonificacion)\n#------ otra forma con diccionario-------\ndef calcular_bonificacion(monto_venta):\n    bonificaciones = {\n        range(0, 1000): 0,\n        range(1000, 5000): 3,\n        range(5000, 20000): 5,\n        range(20000, float('inf')): 8\n    }",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "monto_venta",
+        "kind": 5,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "monto_venta = float(input(\"Ingrese el monto de venta alcanzado por el vendedor durante el mes: \"))\ntotal_bonificacion = calcular_bonificacion(monto_venta)\nprint(\"La bonificación correspondiente es:\", total_bonificacion)\n#16. Elabore un algoritmo que solicite un número \n# #entero y muestre un mensaje indicando la vocal \n# #correspondiente, considerando que la vocal A = 1.\ndef obtener_vocal(numero):\n    switch = {\n        1: \"A\",\n        2: \"E\",",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "total_bonificacion",
+        "kind": 5,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "total_bonificacion = calcular_bonificacion(monto_venta)\nprint(\"La bonificación correspondiente es:\", total_bonificacion)\n#16. Elabore un algoritmo que solicite un número \n# #entero y muestre un mensaje indicando la vocal \n# #correspondiente, considerando que la vocal A = 1.\ndef obtener_vocal(numero):\n    switch = {\n        1: \"A\",\n        2: \"E\",\n        3: \"I\",",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "numero_entero",
+        "kind": 5,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "numero_entero = int(input(\"Ingrese un número entero del 1 al 5: \"))\nvocal_correspondiente = obtener_vocal(numero_entero)\nprint(\"La vocal correspondiente es:\", vocal_correspondiente)\n#17\n# Ejercicio 1: Clasificación de edades.\n# Escribe un programa que reciba una edad como entrada \n# y clasifique a la persona en las siguientes categorías: \n# niño (menos de 11 años), adolescente (12-17 años), \n# adulto (18-64 años) o mayor (65 años o más).\n#Opcional: preadolescente: 11 a 13 y adolescente de 14 a 17",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "vocal_correspondiente",
+        "kind": 5,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "vocal_correspondiente = obtener_vocal(numero_entero)\nprint(\"La vocal correspondiente es:\", vocal_correspondiente)\n#17\n# Ejercicio 1: Clasificación de edades.\n# Escribe un programa que reciba una edad como entrada \n# y clasifique a la persona en las siguientes categorías: \n# niño (menos de 11 años), adolescente (12-17 años), \n# adulto (18-64 años) o mayor (65 años o más).\n#Opcional: preadolescente: 11 a 13 y adolescente de 14 a 17\nedad = int(input(\"Ingrese su edad\"))",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
+        "label": "edad",
+        "kind": 5,
+        "importPath": "ejercicios",
+        "description": "ejercicios",
+        "peekOfCode": "edad = int(input(\"Ingrese su edad\"))",
+        "detail": "ejercicios",
+        "documentation": {}
+    },
+    {
         "label": "verificar_cuil",
         "kind": 2,
         "importPath": "ejercicios32",
@@ -706,7 +823,7 @@
         "kind": 5,
         "importPath": "ejercicios32",
         "description": "ejercicios32",
-        "peekOfCode": "numero_entero = int(input(\"Ingrese un número entero del 1 al 5: \"))\nvocal_correspondiente = obtener_vocal(numero_entero)\nprint(\"La vocal correspondiente es:\", vocal_correspondiente)\n#17.\tSe desea leer un número entero de 2 cifras y #que se muestre el número de unidades, decenas que #lo componen.\ndef obtener_unidades_y_decenas(numero):\n    unidades = numero % 10\n    decenas = numero // 10\n    return unidades, decenas\ndef es_par(numero):\n    if numero != 0 and numero % 2 == 0:",
+        "peekOfCode": "numero_entero = int(input(\"Ingrese un número entero del 1 al 5: \"))\nvocal_correspondiente = obtener_vocal(numero_entero)\nprint(\"La vocal correspondiente es:\", vocal_correspondiente)\n#17.\tSe desea leer un número entero de 2 cifras y \n# #que se muestre el número de unidades, decenas que #lo componen.\ndef obtener_unidades_y_decenas(numero):\n    unidades = numero % 10\n    decenas = numero // 10\n    return unidades, decenas\ndef es_par(numero):",
         "detail": "ejercicios32",
         "documentation": {}
     },
@@ -715,7 +832,7 @@
         "kind": 5,
         "importPath": "ejercicios32",
         "description": "ejercicios32",
-        "peekOfCode": "vocal_correspondiente = obtener_vocal(numero_entero)\nprint(\"La vocal correspondiente es:\", vocal_correspondiente)\n#17.\tSe desea leer un número entero de 2 cifras y #que se muestre el número de unidades, decenas que #lo componen.\ndef obtener_unidades_y_decenas(numero):\n    unidades = numero % 10\n    decenas = numero // 10\n    return unidades, decenas\ndef es_par(numero):\n    if numero != 0 and numero % 2 == 0:\n        return True",
+        "peekOfCode": "vocal_correspondiente = obtener_vocal(numero_entero)\nprint(\"La vocal correspondiente es:\", vocal_correspondiente)\n#17.\tSe desea leer un número entero de 2 cifras y \n# #que se muestre el número de unidades, decenas que #lo componen.\ndef obtener_unidades_y_decenas(numero):\n    unidades = numero % 10\n    decenas = numero // 10\n    return unidades, decenas\ndef es_par(numero):\n    if numero != 0 and numero % 2 == 0:",
         "detail": "ejercicios32",
         "documentation": {}
     },
@@ -733,7 +850,7 @@
         "kind": 5,
         "importPath": "ejercicios32",
         "description": "ejercicios32",
-        "peekOfCode": "numero = 2\nprint(numero)\nfor k in range(1, 5):\n    numero += 2\n    print(numero)\n#20.\tElaborar un algoritmo que permita mostrar el #sueldo promedio de un grupo de empleados.\nnumero_empleados = int(input(\"Ingrese el número de empleados: \"))\nsuma_sueldos = 0\nfor k in range(1, numero_empleados + 1):\n    sueldo_empleado = float(input(f\"Ingrese el sueldo del empleado {k}: \"))",
+        "peekOfCode": "numero = 2\nprint(numero)\nfor k in range(1, 5):\n    numero += 2\n    print(numero)\n#20.\tElaborar un algoritmo que permita mostrar el #sueldo promedio de un grupo de empleados.\nnumero_empleados = int(input(\"Ingrese el número de empleados: \"))\nsuma_sueldos = 0\nif es_par(numero_entero):\n    print(\"El número\", numero_entero, \"es par.\")",
         "detail": "ejercicios32",
         "documentation": {}
     },
@@ -742,7 +859,7 @@
         "kind": 5,
         "importPath": "ejercicios32",
         "description": "ejercicios32",
-        "peekOfCode": "numero_empleados = int(input(\"Ingrese el número de empleados: \"))\nsuma_sueldos = 0\nfor k in range(1, numero_empleados + 1):\n    sueldo_empleado = float(input(f\"Ingrese el sueldo del empleado {k}: \"))\n    suma_sueldos += sueldo_empleado\nsueldo_promedio = suma_sueldos / numero_empleados\nprint(\"El sueldo promedio del grupo de empleados es:\", sueldo_promedio)\n#21.\tElaborar un algoritmo que solicite la edad de #200 personas, y que muestre cuantos son mayores y #menores de edad hay\nmayores = 0\nmenores = 0",
+        "peekOfCode": "numero_empleados = int(input(\"Ingrese el número de empleados: \"))\nsuma_sueldos = 0\nif es_par(numero_entero):\n    print(\"El número\", numero_entero, \"es par.\")\nfor k in range(1, numero_empleados + 1):\n    sueldo_empleado = float(input(f\"Ingrese el sueldo del empleado {k}: \"))\n    suma_sueldos += sueldo_empleado\nsueldo_promedio = suma_sueldos / numero_empleados\nprint(\"El sueldo promedio del grupo de empleados es:\", sueldo_promedio)\n#21.\tElaborar un algoritmo que solicite la edad de #200 personas, y que muestre cuantos son mayores y #menores de edad hay",
         "detail": "ejercicios32",
         "documentation": {}
     },
@@ -751,7 +868,7 @@
         "kind": 5,
         "importPath": "ejercicios32",
         "description": "ejercicios32",
-        "peekOfCode": "suma_sueldos = 0\nfor k in range(1, numero_empleados + 1):\n    sueldo_empleado = float(input(f\"Ingrese el sueldo del empleado {k}: \"))\n    suma_sueldos += sueldo_empleado\nsueldo_promedio = suma_sueldos / numero_empleados\nprint(\"El sueldo promedio del grupo de empleados es:\", sueldo_promedio)\n#21.\tElaborar un algoritmo que solicite la edad de #200 personas, y que muestre cuantos son mayores y #menores de edad hay\nmayores = 0\nmenores = 0\nfor k in range(1, 201):",
+        "peekOfCode": "suma_sueldos = 0\nif es_par(numero_entero):\n    print(\"El número\", numero_entero, \"es par.\")\nfor k in range(1, numero_empleados + 1):\n    sueldo_empleado = float(input(f\"Ingrese el sueldo del empleado {k}: \"))\n    suma_sueldos += sueldo_empleado\nsueldo_promedio = suma_sueldos / numero_empleados\nprint(\"El sueldo promedio del grupo de empleados es:\", sueldo_promedio)\n#21.\tElaborar un algoritmo que solicite la edad de #200 personas, y que muestre cuantos son mayores y #menores de edad hay\nmayores = 0",
         "detail": "ejercicios32",
         "documentation": {}
     },
