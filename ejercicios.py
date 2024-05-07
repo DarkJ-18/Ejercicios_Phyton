@@ -93,6 +93,10 @@ print("La vocal correspondiente es:", vocal_correspondiente)
 # adulto (18-64 años) o mayor (65 años o más).
 #Opcional: preadolescente: 11 a 13 y adolescente de 14 a 17
 
+
+
+   
+
 edad = int(input("Ingrese su edad: "))
 try:
     if edad <=11:
@@ -143,7 +147,6 @@ elif temp > 30:
     
     
 #20. Ejercicio 4: Clasificación de IMC.
-
 # Escribe un programa que reciba el Índice de Masa Corporal (IMC) 
 # de una persona y lo clasifique en: bajo peso (menos de 18.5), 
 # normal (18.5-24.9), sobrepeso (25-29.9) u obeso (30 o más).   
@@ -159,7 +162,6 @@ elif imc >= 30:
        print("Obeso")
        
 #21. Ejercicio 5: Evaluación del viento.
-
 #Escribe un programa que reciba la velocidad del viento (en km/h) 
 # y la clasifique en: calmado (menos de 5 km/h), ligero (5-19 km/h), 
 # moderado (20-39 km/h) o fuerte (más de 40 km/h).
@@ -175,7 +177,6 @@ elif velocidad >= 40:
     print("Viento fuerte")
     
 #22. Ejercicio 6: Clasificación de automóviles.
-
 #Escribe un programa que reciba la velocidad máxima 
 # de un automóvil (en km/h) y lo clasifique en: económico (menos de 140 km/h),
 # estándar (140-180 km/h), 
@@ -192,7 +193,6 @@ elif velocidad > 220:
     print("Automóvil de alto rendimiento")
 
 #23. Ejercicio 7: Clasificación de alturas.
-
 #Escribe un programa que reciba la altura de una persona (en centímetros)
 # y la clasifique en: baja (menos de 150 cm), promedio (150-180 cm) 
 # o alta (más de 180 cm).
