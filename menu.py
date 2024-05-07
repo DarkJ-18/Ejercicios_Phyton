@@ -1,15 +1,14 @@
 import os
-os.system('clear')
+
 
 try:
     
-    mensaje=("Menu de opciones: Opc 1 /opc 2 /opc 3 /salir 4 ")
+    mensaje=("Menu de opciones: Opc 1\n opc 2 \nopc 3 \n salir 4 ")
     menu=True
     while menu:
-       
         print(mensaje)
-        os.system('clear')
         opcion=input("Ingrese una opcion: ")
+        os.system('clear')
         if opcion=="1":
             print("Opcion 1")
         elif opcion=="2":
