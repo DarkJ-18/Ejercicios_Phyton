@@ -1,13 +1,25 @@
 import keyboard
 
+def char_to_utf8(char): 
+    return ord(char) 
+
+def utf8_to_char(utf8_code): 
+    return chr(utf8_code) 
+
+while True:
+    try:
+        entrada = input("Ingrese una tecla o un código UTF-8 ('esc' para salir): ")
+        
+        if entrada == 'esc': 
+            print("Saliendo del programa...")
+            break
+        
+        if len(entrada) == 1: # si la entrada tiene longitud 1, es una tecla
+            tecla = entrada
+            codigo = char_to_utf8(tecla) 
+           
+        
+          
 
 
-def on_key_pressed(event): # funcion que se ejecuta cuando se presiona una tecla
-   
-    print("Tecla presionada:", event.name) # imprime la tecla presionada
-
-
-keyboard.on_press(on_key_pressed) # llama a la funcion on_key_pressed cuando se presiona una tecla
-
-
-keyboard.wait('esc') # espera a que se presione la tecla esc para terminar el programa
+#keyboard.wait('esc')
