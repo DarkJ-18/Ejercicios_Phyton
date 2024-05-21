@@ -1,7 +1,5 @@
 ﻿#ingresar 4 numeros y que me de el mayor, menor y el medio
 
-
-
 numeros = []
 
 for i in range(4):
