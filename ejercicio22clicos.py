@@ -114,5 +114,5 @@ while opc != 9:
 
     elif opc ==9:
         os.system("clear")
-        print("Vuelva pronto!!")
+        print("El perico no se vende aca!!")
         
