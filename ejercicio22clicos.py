@@ -118,7 +118,7 @@ while opc != 9:
         
 #------------------------------
 
-print("Bienvenido al Menu de Listas")
+print("Bienvenido al Menu")
 
 i = True
 
@@ -266,6 +266,6 @@ while i == True:
 
     elif x == 21:
 
-        print("Hasta Pronto :)")
+        print("Hasta Pronto")
 
         i = False
