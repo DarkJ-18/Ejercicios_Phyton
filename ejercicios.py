@@ -94,9 +94,6 @@ print("La vocal correspondiente es:", vocal_correspondiente)
 #Opcional: preadolescente: 11 a 13 y adolescente de 14 a 17
 
 
-
-   
-
 edad = int(input("Ingrese su edad: "))
 try:
     if edad <=11:
