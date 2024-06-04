@@ -4,7 +4,7 @@ cantidad=[]
 precio=[]
 i = True
 while i:
-    x = int(input("\nIngresa Una Opcion\n1--CrearProducto\n2--BuscarProducto\n3--EliminarProducto\n4--ActualizarProducto\n5--Salir\n"))
+    x = int(input("\nIngresa Una Opcion\n1--CrearProducto\n2--BuscarProducto\n3--EliminarProducto\n4--ActualizarProducto\n6--Organizar Inventario\n7--Invertir Inventario\n8--Borrar Inventario\n5--Salir\n"))
     if x == 1:
         apro = input("Ingresa El Nombrep Del Producto: ").capitalize()
         acan = int(input("Ingresa La Cantidad Del Producto: "))
