@@ -4,7 +4,7 @@ if os.name=="nt": #para windows
   os.system("cls")
 else: #para linux
     os.system("clear")
-    
+
 def convertir_a_romano(numero_entero):
     romanos = {
         1: "I",
@@ -16,7 +16,7 @@ def convertir_a_romano(numero_entero):
         7: "VII",
         8: "VIII",
         9: "IX",
-        10: "X"
+        10: "X",
     }
     return romanos.get(numero_entero, "Número fuera de rango")
 
@@ -26,7 +26,7 @@ equivalente_romano = convertir_a_romano(numero_entero)
 print("El equivalente en romano es:", equivalente_romano)
 
 
-#15.Elabore un algoritmo que permita ingresar el #monto de venta alcanzado por un vendedor durante #el mes, luego de calcular la bonificación que le #corresponde sabiendo:
+# 15.Elabore un algoritmo que permita ingresar el #monto de venta alcanzado por un vendedor durante #el mes, luego de calcular la bonificación que le #corresponde sabiendo:
 
 
 def calcular_bonificacion(monto_venta):
@@ -46,7 +46,7 @@ bonificacion = calcular_bonificacion(monto_venta)
 print("La bonificación correspondiente es:", bonificacion)
 
 
-#------ otra forma con diccionario-------
+# ------ otra forma con diccionario-------
 
 def calcular_bonificacion(monto_venta):
     bonificaciones = {
@@ -65,8 +65,8 @@ total_bonificacion = calcular_bonificacion(monto_venta)
 print("La bonificación correspondiente es:", total_bonificacion)
 
 
-#16. Elabore un algoritmo que solicite un número 
-# #entero y muestre un mensaje indicando la vocal 
+# 16. Elabore un algoritmo que solicite un número
+# #entero y muestre un mensaje indicando la vocal
 # #correspondiente, considerando que la vocal A = 1.
 
 def obtener_vocal(numero):
@@ -84,14 +84,14 @@ numero_entero = int(input("Ingrese un número entero del 1 al 5: "))
 vocal_correspondiente = obtener_vocal(numero_entero)
 print("La vocal correspondiente es:", vocal_correspondiente)
 
-#17
+# 17
 # Ejercicio 1: Clasificación de edades.
 
-# Escribe un programa que reciba una edad como entrada 
-# y clasifique a la persona en las siguientes categorías: 
-# niño (menos de 11 años), adolescente (12-17 años), 
+# Escribe un programa que reciba una edad como entrada
+# y clasifique a la persona en las siguientes categorías:
+# niño (menos de 11 años), adolescente (12-17 años),
 # adulto (18-64 años) o mayor (65 años o más).
-#Opcional: preadolescente: 11 a 13 y adolescente de 14 a 17
+# Opcional: preadolescente: 11 a 13 y adolescente de 14 a 17
 
 
 edad = int(input("Ingrese su edad: "))
@@ -106,9 +106,9 @@ try:
         print("Mayor")
 except:
     print("Ingrese solo numeros")
-    
-#18   Escribe un programa que reciba una nota (0-100) 
-# y la clasifique en: deficiente (menos de 50), aprobado (50-64), 
+
+# 18   Escribe un programa que reciba una nota (0-100)
+# y la clasifique en: deficiente (menos de 50), aprobado (50-64),
 # notable (65-84), sobresaliente (85-100).
 
 nota = int(input("Ingrese la nota: "))
@@ -124,10 +124,9 @@ else:
     print ("Nota fuera del rango permitido.")
 
 
-
-#19. Ejercicio 3: Clasificación de temperaturas.
-#Escribe un programa que reciba una temperatura 
-# (en grados Celsius) y la clasifique en: frío 
+# 19. Ejercicio 3: Clasificación de temperaturas.
+# Escribe un programa que reciba una temperatura
+# (en grados Celsius) y la clasifique en: frío
 # (menos de 10°C), templado (10-20°C), cálido (21-30°C)
 # o caluroso (más de 30°C).
 
@@ -141,12 +140,12 @@ elif temp >= 21 and temp <= 30:
     print("Cálido")
 elif temp > 30:
     print("Caluroso")
-    
-    
-#20. Ejercicio 4: Clasificación de IMC.
-# Escribe un programa que reciba el Índice de Masa Corporal (IMC) 
-# de una persona y lo clasifique en: bajo peso (menos de 18.5), 
-# normal (18.5-24.9), sobrepeso (25-29.9) u obeso (30 o más).   
+
+
+# 20. Ejercicio 4: Clasificación de IMC.
+# Escribe un programa que reciba el Índice de Masa Corporal (IMC)
+# de una persona y lo clasifique en: bajo peso (menos de 18.5),
+# normal (18.5-24.9), sobrepeso (25-29.9) u obeso (30 o más).
 
 imc = float(input("Ingrese su IMC: "))
 if imc < 18.5:
@@ -157,10 +156,10 @@ elif 25 <= imc < 30:
        print("Sobrepeso")
 elif imc >= 30:
        print("Obeso")
-       
-#21. Ejercicio 5: Evaluación del viento.
-#Escribe un programa que reciba la velocidad del viento (en km/h) 
-# y la clasifique en: calmado (menos de 5 km/h), ligero (5-19 km/h), 
+
+# 21. Ejercicio 5: Evaluación del viento.
+# Escribe un programa que reciba la velocidad del viento (en km/h)
+# y la clasifique en: calmado (menos de 5 km/h), ligero (5-19 km/h),
 # moderado (20-39 km/h) o fuerte (más de 40 km/h).
 
 velocidad = float (input ("Introduce la velocidad del viento en km/h: "))
@@ -172,11 +171,11 @@ elif 20 <= velocidad < 40:
     print("Viento moderado")
 elif velocidad >= 40:
     print("Viento fuerte")
-    
-#22. Ejercicio 6: Clasificación de automóviles.
-#Escribe un programa que reciba la velocidad máxima 
+
+# 22. Ejercicio 6: Clasificación de automóviles.
+# Escribe un programa que reciba la velocidad máxima
 # de un automóvil (en km/h) y lo clasifique en: económico (menos de 140 km/h),
-# estándar (140-180 km/h), 
+# estándar (140-180 km/h),
 # deportivo (181-220 km/h) o de alto rendimiento (más de 220 km/h).
 
 velocidad = float(input("Introduce la velocidad máxima del automóvil en km/h: "))
@@ -189,10 +188,7 @@ elif 181 <= velocidad <= 220:
 elif velocidad > 220:
     print("Automóvil de alto rendimiento")
 
-#23. Ejercicio 7: Clasificación de alturas.
-#Escribe un programa que reciba la altura de una persona (en centímetros)
-# y la clasifique en: baja (menos de 150 cm), promedio (150-180 cm) 
+# 23. Ejercicio 7: Clasificación de alturas.
+# Escribe un programa que reciba la altura de una persona (en centímetros)
+# y la clasifique en: baja (menos de 150 cm), promedio (150-180 cm)
 # o alta (más de 180 cm).
-
-
-
