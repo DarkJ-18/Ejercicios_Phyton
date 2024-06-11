@@ -116,6 +116,16 @@ listaSinMayor = [num for num in lista if num != mayor]
 segundoMayor = max(listaSinMayor)
 print("EL SEGUNDO MAYOR NUMERO ES: ", segundoMayor)
 
+
+
+
+
+
+
+
+
+
+
 print("------------------9----------------")
 #Intercalar Elementos de dos Listas Escribe un algoritmo que intercale los elementos de dos listas de igual longitud.
 
