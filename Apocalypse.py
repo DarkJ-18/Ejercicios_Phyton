@@ -29,7 +29,6 @@ def print_lyrics():
         ("Tell me why", 0.08),
         ("Got the music in you, baby", 0.08),
         ("Tell me why", 0.08),
-
         ("You've been locked in here forever", 0.05),
         ("And you just can't say goodbye", 0.09),
         
