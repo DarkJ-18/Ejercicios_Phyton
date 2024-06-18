@@ -117,15 +117,6 @@ segundoMayor = max(listaSinMayor)
 print("EL SEGUNDO MAYOR NUMERO ES: ", segundoMayor)
 
 
-
-
-
-
-
-
-
-
-
 print("------------------9----------------")
 #Intercalar Elementos de dos Listas Escribe un algoritmo que intercale los elementos de dos listas de igual longitud.
 
@@ -174,6 +165,13 @@ lista= [1,2,3,4,5]
 listaDuplicada = [num*2 for num in lista]
 print("Lista con los elementod duplicados:", listaDuplicada)
 
+lista = [1,2,3,4,5]
+listaDuplicada=[]
+for ele in lista:
+    listaDuplicada.append(ele*2)
+print(listaDuplicada)
+
+
 
 print("------------------14----------------")
 #Alternar Mayúsculas y Minúsculas en una Lista de Strings 
@@ -193,22 +191,47 @@ for num in range(2,20):
     esPrimo = True
     if num <= 1:
         esPrimo = False
-    for i in range(2,num)
-        esPrimo = False
-    break
+    for i in range(2,num):
+        if num % i == 0:
+            esPrimo = False
+            break
     if esPrimo:
         primos.append(num)
-print("Lista de numeros primos menores a 20: ", primos)
 
-#Crear una Lista de Números Fibonacci 
-# Escribe un algoritmo que genere una lista de los primeros 10 números de Fibonacci.
+print("Lista de numeros primos menores a 20: ", primos)
 
 
 
 print("------------------16----------------")
+#Crear una Lista de Números Fibonacci 
+# Escribe un algoritmo que genere una lista de los primeros 10 números de Fibonacci.
 
+fibonacci = [0,1]
+for i in range(2,10):
+    fibonacci.append(fibonacci[i-1] + fibonacci[i-2])
+print("Lista de los primeros 10 numeros de Fibonacci: ", fibonacci)
 
 print("------------------17----------------")
+
+#Escribe un algoritmo que elimine los elementos en posiciones impares de una lista.
+
+lista = [1,2,3,4,5,6,7,8]
+
+listaPares = [num for i, num in enumerate(lista) if i % 2 == 0]
+print("Lista sin elementos en posiciones impares", listaPares)
+
+
 print("------------------18----------------")
+#Escribe un algoritmo que genere una lista de los números del 1 al 5 elevados a la cuarta potencia.
+
+potencias = [num**4 for num in range(1,6)]
+print("lista de potencias a la cuarta:", potencias)
+
 print("------------------19----------------")
+
+#Escribe un algoritmo que invierta el orden de los elementos en una lista de strings.
+
+palabras = ["python", "es", "genial"]
+palabrasInvertidas = palabras[::-1]
+
 print("------------------20----------------")

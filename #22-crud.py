@@ -101,7 +101,7 @@ while opc != 9:
             cantidad.reverse()
             precio.reverse()
         else:
-            print("---No hay productos para mostrar---")
+            print("---No hay productos para> mostrar---")
     elif opc ==8:
         os.system("clear")
         if producto:
